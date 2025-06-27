@@ -1,0 +1,17 @@
+Components such as libraries and frameworks that are used in most web applications always execute with full privileges, and flaws in any component can have severe consequences. 
+
+Attackers can identify weak components or dependencies by scanning or by performing manual analysis. 
+
+Attackers search for any vulnerabilities on exploit sites such as Exploit Database (https://www.exploit-db.com), CXSecurity (https://cxsecurity.com), and Zero Day Initiative (https://www.zerodayinitiative.com).
+
+If a vulnerable component is identified, the attacker customizes the exploit as required and executes the attack. 
+
+Successful exploitation allows the attacker to cause serious data loss or take over control of the servers
+
+When all the components’ versions from both the server and client sides remain unknown. This can include nested dependencies as well as components that are being used directly.
+
+When the regular vulnerability scanning process is neglected and not subscribed to the security updates associated with the components being used
+
+When the compatibility of software updates or patches is not properly validated or checked.
+
+
