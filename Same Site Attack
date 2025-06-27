@@ -1,0 +1,18 @@
+Same-site attacks, also known as related-domain attacks, occur when an attacker targets a subdomain of a trusted organization and attempts to redirect users to an attacker-controlled web page. 
+
+Subdomains that are misconfigured or left for years without use are often targeted by attackers to perform this attack.
+
+Generally, the most familiar domains such as .edu, .com, and .org contain several perimeters that make it easy for attackers to capture unused or misconfigured subdomains sharing the legitimate site’s top-level domains (TLDs). 
+
+These TLDs help attackers in hijacking the legitimate websites to create dangling records using extended TLDs (eTLDs). 
+
+Such websites sharing the same eTLD+1 domain are called same sites, which can be targeted by same-site attackers.
+
+The victims of these attacks are redirected to an attacker-controlled web page, which has the appearance of a secure, legitimate web page.
+
+The vulnerable subdomains can be compromised through phishing attacks, malware injection, cookie poisoning, abuse of JavaScript APIs, etc. 
+
+Same-site attackers can also obtain cookies because similar sites that use the eTLD+1 domain share cookies.
+
+In a Same-site attack, the attacker redirects a user attempting to browse www.certifiedhacker.com to an attacker-controlled dangling site, rans.certifiedhacker.com. 
+The malicious link shares a common domain name, which lures the user into believing that the redirected site is the secure or legitimate one
