@@ -1,0 +1,34 @@
+Developers and network administrators should ensure that an entire application stack is configured properly; otherwise, security misconfiguration can occur at any level of the stack, 
+
+including its platform, web server, application server, framework, and custom code. 
+
+For instance, if the developer does not configure the server properly, it could result in various problems that can affect the site security.
+
+Unvalidation:- No validation or improper validation can make a web application vulnerable to various input validation attacks.
+If web applications implement input validation only on the client side, attackers can easily bypass it by tampering with the HTTP requests, URLs, headers, form fields, hidden fields, and query strings.
+Users’ login IDs and other related data are stored in the cookies, which become a means of attack. 
+An attacker exploits input validation flaws to perform cross-site scripting, buffer overflow, injection attacks, etc., resulting in data theft and system malfunction
+
+Parameter tampering is a simple type of attack aimed directly at an application’s business logic. 
+It takes advantage of the fact that many programmers rely on hidden or fixed fields (such as a hidden tag in a form or a parameter in a URL) as the only security measure for certain operations. 
+To bypass this security mechanism, an attacker can change these parameters. 
+A parameter tampering attack exploits vulnerabilities in integrity and logic validation mechanisms that may result in XSS, SQL injection, etc.
+
+BYpassing:- HTML forms submit their results using one of two methods: GET or POST. 
+In the GET method, all form parameters and their values appear in the query string of the next URL, which the user sees. An attacker may tamper with this query string. 
+For example, consider a web page that allows an authenticated user to select one of his or her accounts from a combo box and debit the account with a fixed unit amount. 
+The attacker can modify other URL parameters, including attribute parameters and internal modules. Attribute parameters are unique parameters that characterize the behavior of the uploading page.
+
+Improper exception handling occurs when web applications do not limit the amount of information they return to their users. 
+Information leakage may include helpful error messages and service banners. Developers and system administrators often forget or disregard how an attacker can use something as simple as a server banner. 
+The attacker will start searching for a place to identify vulnerabilities and attempt to leverage information that applications freely volunteer
+
+Insufficient transport layer protection is a security flaw that occurs when an application fails to protect sensitive traffic flowing in a network. 
+It supports weak algorithms and uses expired or invalid certificates. 
+Developers should use SSL/TLS authentication for authentication on the websites; otherwise, an attacker can monitor the network traffic. 
+Unless communication between websites and clients is encrypted, data can be intercepted, injected, or redirected. 
+
+Many older or poorly configured XML processors evaluate external entity references within XML documents. 
+External entities can disclose internal files using the file URI handler, internal SMB file shares on unpatched Windows servers, internal port scanning, remote code execution, and DoS attacks such as the billion laughs attack.
+
+
