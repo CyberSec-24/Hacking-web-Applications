@@ -1,0 +1,24 @@
+Web applications need to store sensitive information such as passwords, credit-card numbers, account records, and other authentication information in a database or on a file system. 
+
+If users do not maintain the proper security of their storage locations, the application may be at risk as attackers can access the storage and misuse the information
+
+Many web applications do not properly protect their sensitive data from unauthorized users.
+
+Sensitive data exposure occurs because of flaws such as insecure cryptographic storage and information leakage.
+
+ When an application uses poorly written encryption code to encrypt and store sensitive data in a database, 
+
+the attacker can easily exploit this flaw to steal or modify weakly protected sensitive data such as credit-cards numbers, SSNs, and other authentication credentials. 
+
+Thus, they can launch further attacks such as identity theft and credit-card fraud.
+
+f these keys are stored at insecure locations, then attackers can retrieve them easily and decrypt the sensitive data. 
+
+
+The insecure storage of keys, certificates, and passwords also allows the attacker to gain access to the web application as a legitimate user. 
+
+Furthermore, developers must check the randomness of the initialization vectors (IVs) used in the encryption algorithms. 
+
+Developers should ensure that the IVs are not reused and are generated using secure cipher modes of operation
+
+
