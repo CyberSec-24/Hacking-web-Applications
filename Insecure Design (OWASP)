@@ -1,0 +1,14 @@
+Insecure design flaws arise in an application because of the improper implementation of security controls and can lead to crucial vulnerabilities such as SQLi and Open S3 buckets.
+
+Application designers may overlook security threats or have mediocre knowledge about them; this is a major cause of these vulnerabilities. 
+
+Such vulnerabilities can directly compromise the application’s security. 
+
+Attackers initiate the threat modeling of an application’s working process to identify a wide range of flaws and loopholes before exploiting an insecure design or architecture
+
+Attackers often attempt to exploit poorly implemented APIs, which fail to filter requests properly. 
+
+They search for weak APIs that are not integrated with security gateways to differentiate malicious inputs. Then, they attach malicious code to a vulnerable API. 
+
+When a user accesses that API via an application, the malicious code loads along with the database content on the user’s browser
+
