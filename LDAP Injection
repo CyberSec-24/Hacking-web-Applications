@@ -1,0 +1,26 @@
+LDAP Directory Services store and organize information based on its attributes. The information is hierarchically organized as a tree of directory entries
+
+LDAP injection techniques take advantage of non-validated web application input vulnerabilities and pass LDAP filters used for searching Directory Services to obtain direct access to databases behind an LDAP tree
+
+To test if an application is vulnerable to LDAP code injection, send a query to the server that generates an invalid input. 
+
+If the LDAP server returns an error, it can be exploited with code injection techniques
+
+It runs on an Internet transport protocol such as TCP, and it is an open-standard protocol for manipulating and querying Directory Services.
+
+An LDAP injection technique is used to take advantage of non-validated web application input vulnerabilities to pass LDAP filters used for searching Directory Services to obtain direct access to databases behind an LDAP tree.
+
+Web applications may use user-supplied input to create custom LDAP statements for dynamic web page requests. 
+
+Attackers commonly perform LDAP injection attacks on web applications employing user inputs to generate LDAP queries.
+
+The attackers can use the search filter attributes to discover the underlying LDAP query structure. 
+
+Using this structure, the attacker includes additional attributes in the user-supplied input to determine whether the application is vulnerable to LDAP injection and evaluates the web application’s output.
+
+If an attacker enters a valid username "certifiedhacker" and injects certifiedhacker)(&)), then the URL string becomes (&(USER=certifiedhacker)(&))(PASS=blah)).
+
+The LDAP server processes only the first filter; only the query (&(USER=certifiedhacker)(&)) is processed. 
+
+This query is always true, and the attacker logs into the system without a valid password.
+
