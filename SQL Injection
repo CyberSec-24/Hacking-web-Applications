@@ -1,0 +1,19 @@
+SQL injection attacks use a series of malicious SQL queries or SQL statements to directly manipulate the database. 
+
+Applications often use SQL statements to authenticate users, validate roles and access levels, store and retrieve information for the application and user, and link to other data sources. 
+
+SQL injection attacks work because the application does not properly validate the input before passing it to an SQL statement
+
+The expression “OR 1=1” evaluates to the value “TRUE,” often allowing the enumeration of all user ID values from the database.
+
+An attacker uses a vulnerable web application to bypass normal security measures and obtain direct access to valuable data. 
+
+Attackers carry out SQL injection attacks from the web browser’s address bar, form fields, queries, searches, and so on. SQL injection attacks allow attackers 
+
+Log into the application without supplying valid credentials 
+
+Perform queries against data in the database, often even data to which the application would not normally have access
+
+Use the trust relationships established between the web application components to access other databases
+
+
