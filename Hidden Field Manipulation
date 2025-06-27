@@ -1,0 +1,13 @@
+Attackers carry out hidden field manipulation attacks against e-commerce websites, as most of these sites have hidden fields in their price and discount specifications.
+
+In every client session, developers use hidden fields to store client information, including product prices and discount rates.
+
+During the development of such programs, developers feel that all their applications are safe; however, hackers can manipulate the product prices and even complete transactions with the altered prices.
+
+When a user makes selections on an HTML page, the selection is typically stored as form field values and sent to the application as an HTTP request (GET or POST). 
+
+HTML can also store field values as hidden fields, which are not rendered on the screen by the browser but collected and submitted as parameters during form submissions.
+
+Attackers can examine the HTML code of the page and change the hidden field values to change post requests to the server
+
+
