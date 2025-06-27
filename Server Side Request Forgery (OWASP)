@@ -1,0 +1,18 @@
+Attackers exploit server-side request forgery (SSRF) vulnerabilities, which evolve from the unsafe use of functions in an application, in public web servers to send crafted requests to internal or backend servers.
+
+Internal servers usually employ firewalls to prevent unwanted traffic inflows to the network. 
+
+Therefore, attackers leverage SSRF vulnerabilities in Internet - facing web servers to gain access to backend servers that are protected by a firewall, VPN, or access-control lists (ACLs).
+
+The backend server believes that the request is made by the web server because these servers are on the same network; consequently, the backend server responds with the data stored in it.
+
+SSRF vulnerabilities evolve in the following manner. Generally, server-side requests are initiated to obtain information from an external resource and feed it into an application. 
+
+For instance, a designer can utilize a URL such as https://xyz.com/feed.php?url=externalsite.com/feed/to to obtain a remote feed
+
+Once the attack is successful, attackers can perform various activities such as port scanning, network scanning, 
+
+IP address discovery, reading of web server files, bypassing of host-based authentication, interaction with critical protocols, and remote code execution
+
+
+
