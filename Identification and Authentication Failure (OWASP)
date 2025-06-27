@@ -1,0 +1,20 @@
+At present, web applications implementing robust authentication mechanisms fail because of weak credential functions such as “change my password,” “forgot my password,” “remember my password,” and “account update.” 
+
+Therefore, developers must take the utmost care when implementing user authentication securely. 
+
+It is always preferable to use strong authentication methods through special software-and hardware-based cryptographic tokens or biometrics. 
+
+To impersonate users, an attacker exploits vulnerabilities in the authentication or session management functions such as exposed accounts, session IDs, logout, password management, timeouts, remember me, secret question, account update, and others.
+
+A web application creates a session ID when a user logs into http://certifiedhackershop.com. 
+
+An attacker uses a sniffer to sniff the cookie that contains the session ID or tricks the user into disclosing the session ID. 
+
+The attacker now enters the following URL in their browser’s address bar: http://certifiedhackershop.com/sale/saleitems=304;jsessionid=1 2OMTOIDPXM0OQSABGCKLHCJUN2JV?dest=NewMexico
+
+Password Exploitation:-  Attackers can identify passwords stored in databases because of weak hashing algorithms. 
+Further, attackers can gain access to the web application’s password database if user passwords are not encrypted, which allows the attackers to exploit every user’s password.
+
+ TImeout Exploitation:- If an application’s session timeouts are set to long durations, the sessions will last until the time specified, that is, the session will be valid for a long period.
+When the user closes the browser without logging out from sites accessed through a public computer, the attacker can use the same browser later to conduct the attack, as sessions IDs can remain valid; 
+
