@@ -1,0 +1,20 @@
+Web applications maintain logs to track usage patterns, such as user and admin login credentials.
+
+Security logging and monitoring failures cover application weaknesses such as insufficient logging, improper output neutralization for logs, exclusion of security-relevant Information, and addition of sensitive information to log files
+
+Insufficient logging and monitoring refer to scenarios in which the detection software either fails to record a malicious event or ignores important details about the event. 
+
+Attackers usually inject, delete, or tamper with web application logs to engage in malicious activities or hide their identities.
+
+Insufficient logging and monitoring make the detection of malicious attempts of the attacker difficult, and the attacker can perform malicious attacks such as password brute-forcing to steal confidential passwords
+
+ Logs that do not provide information about overall logins, failed login attempts, and important transactions
+
+Inappropriate monitoring of applications and API logs.
+
+Dynamic application security testing (DAST) tools such as OWASP ZAP that fail to generate alerts.
+
+Web applications that are not capable of detecting, escalating, or issuing alerts of suspicious activities in real time
+
+
+
