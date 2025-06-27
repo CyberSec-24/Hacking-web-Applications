@@ -1,0 +1,13 @@
+Access control refers to how a web application grants access to create, update, and delete any record/content or function to some privileged users while restricting access to other users.
+
+Broken access control is a method by which an attacker identifies a flaw related to access control, bypasses the authentication, and then compromises the network
+
+They allow attackers to act as users or administrators with privileged functions and create, access, update, or delete any record.
+
+Evading the filtering of access controls by changing the URL, API request, an HTML page, or the application state via parameter tampering, force browsing, or any attacking tool 
+
+Manipulating the metadata; for example, the manipulation of a hidden field or alteration of a JSON Web Token (JWT) access-control token or a cookie for exploiting JWT invalidation or elevating privileges
+
+Force browsing to privileged or authentic pages as a valid or an invalid user, respectively
+
+
