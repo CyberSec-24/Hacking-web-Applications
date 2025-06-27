@@ -1,0 +1,18 @@
+Complex applications are configured with multiple directories that exist as application components and data. 
+
+An application can traverse these directories to locate and execute the legitimate portions of an application. 
+
+A directory traversal/forceful browsing attack occurs when the attacker is able to browse the directories and files outside the normal application access. 
+
+Such an attack exposes the directory structure of an application and often the underlying web server and operating system.
+
+Directory traversal allows attackers to access restricted directories, including application source code, configuration, and critical system files, and execute commands outside the web server's root directory
+
+Enumerate the contents of files and directories 
+
+Access pages that otherwise require authentication (and possibly payment) 
+
+Gain secret knowledge of the application and its construction 
+
+Discover user IDs and passwords stored in hidden files
+
