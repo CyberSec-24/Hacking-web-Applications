@@ -1,0 +1,13 @@
+Pass-the-cookie attacks allow attackers to access a user’s web services without providing any identity or performing multi-factor authentication. 
+
+A pass-the-cookie attack occurs when attackers obtain a clone of a cookie from the user’s browser and uses the cookie to establish a session with the target web server.
+
+If attackers can retrieve appropriate cookies, they may log in as a valid entity to previously accessed web services, evading all the authentication checkpoints. 
+
+Attackers may also use a specifically developed program or a phishing attack to obtain these cookies.
+
+Mozilla Firefox saves all cookies inside a local SQLite database that attackers may acquire using tools such as firefox_creds. 
+
+If the captured cookie is a session cookie, the attacker can use malware to implant their own session while browsing the web application. 
+
+Attackers can also use mimikatz to extract encrypted cookies
