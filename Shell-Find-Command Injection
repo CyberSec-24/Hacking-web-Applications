@@ -1,0 +1,33 @@
+Shell Injection
+
+An attacker tries to craft an input string to gain shell access to a web server
+
+Shell injection functions include system(), StartProcess(), java.lang.Runtime.exec(), System.Diagnostics.Process.Start(), and similar APIs
+
+This type of attack is used to deface websites virtually. Using this attack, an attacker adds extra HTML-based content to the vulnerable web application
+In an HTML embedding attack, the user input to a web script is placed into the output HTML without being checked for HTML code or scripting
+
+
+Command Injection
+
+The last two sets of numbers denote the banner size. Once the attacker clicks the submit button, the password for the account 1036 is changed to “newpassword." 
+
+The server script assumes that only the URL of the banner image file is inserted into that field
+
+
+File Injection 
+
+A file injection attack is a technique used to exploit “dynamic file include” mechanisms in web applications. 
+
+File injection attacks enable attackers to exploit vulnerable scripts on the server to use a remote file instead of a presumably trusted file from the local file system. 
+
+It occurs when a user is allowed to supply input for the include command dynamically, which is not properly validated before processing.
+
+When a user provides input, the web application passes it into “file include” commands.
+
+Web applications are vulnerable to file injection attacks if the referred files are relayed using elements from HTTP requests. 
+
+PHP is particularly vulnerable to these attacks because of the extensive use of “file includes” in PHP programming and default server configurations
+
+If the application ends with a php extension, and if a user requests it, then the application interprets it as php script and executes it. 
+This allows an attacker to perform arbitrary commands.
