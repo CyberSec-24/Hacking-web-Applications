@@ -1,0 +1,22 @@
+Injection flaws are web application vulnerabilities that allow untrusted data to be interpreted and executed as part of a command or query.
+
+Attackers exploit injection flaws by constructing malicious commands or queries that result in data loss or corruption, lack of accountability, or denial of access.
+
+Attackers inject malicious code, commands, or scripts in the input gates of flawed web applications such that the applications interpret and run the newly supplied malicious input, which in turn allows them to extract sensitive information. 
+
+By exploiting injection flaws in web applications, attackers can easily read, write, delete, and update any data
+
+ SQL injection is the most common website vulnerability on the Internet, and it is used to take advantage of non-validated input vulnerabilities to pass SQL commands through a web application for execution by a backend database.
+In this technique, the attacker injects malicious SQL queries into the user input form either to gain unauthorized access to a database or to retrieve information directly from the database
+
+Command Injection: Attackers identify an input validation flaw in an application and exploit the vulnerability by injecting a malicious command in the application to execute supplied arbitrary commands on the host operating system. 
+Thus, such flaws are extremely dangerous.
+
+LDAP injection is an attack method in which websites that construct LDAP statements from user-supplied input are exploited for launching attacks. When an application fails to sanitize the user input,
+the attacker modifies the LDAP statement with the help of a local proxy. 
+This, in turn, results in the execution of arbitrary commands such as granting access to unauthorized queries and altering the content inside the LDAP tree.
+
+XSS flaws occur when an application includes untrusted data in a new web page without proper validation or escaping, or when an application updates an existing web page with user-supplied data using a browser API that can create JavaScript. 
+XSS allows attackers to inject and execute scripts in the victim’s browser, which can hijack user sessions, deface websites, or redirect the user to malicious sites.
+
+
