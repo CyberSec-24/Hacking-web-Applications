@@ -1,0 +1,17 @@
+Software and data integrity failures occur when organizations fail to update the applications’ software with the latest versions or patches. 
+
+Often, web applications rely on plugins, dependencies, libraries, or packages that can be installed from public repositories, content delivery networks (CDNs), or untrusted sources, which makes them vulnerable to attacks
+
+Therefore, developers must take the utmost care in auditing the code, securing CI/CD pipelines, and using third-party libraries from trusted repositories. 
+
+They should also ensure that serialized data are sent with encryption or signatures. 
+
+If the software is corrupted, it can cause great damage with abnormal behavior in real-time environments or the exposure of application components.
+
+The common security weaknesses in this category include the inclusion of functionalities from an untrusted control sphere, download of code without integrity checks, and deserialization of untrusted data
+
+Example:- Attackers leverage the insecure CI/CD pipeline of an organization to install and distribute malicious code. 
+The client unintentionally downloads and installs this software from the organization’s servers without validating its integrity. 
+Now, attackers use the malicious code in the client network to gain complete remote access.
+
+
