@@ -1,0 +1,37 @@
+Cross-site scripting (XSS or CSS) attacks exploit vulnerabilities in dynamically generated web pages, which enables malicious attackers to inject client-side script into web pages viewed by other users. 
+
+Such attacks occur when invalidated input data is included in dynamic content that is sent to a user's web browser for rendering
+
+Attackers bypass client-ID security mechanisms, gain access privileges, and then inject malicious scripts into specific web pages. 
+
+These malicious scripts can even rewrite HTML website content
+
+A web page consists of text and HTML markup created by the server and obtained by the client browser. 
+
+Servers can control the client's interpretation about the statically generated pages, but they cannot completely control the client's interpretation of the output of the page generated dynamically by the servers. 
+
+Thus, if the attacker inserts untrusted content into a dynamic page, neither the server nor the client recognizes it. 
+
+Untrusted input can come from URL parameters, form elements, cookies, database queries, and so on
+
+Thus, an attacker can choose the data inserted into the generated page and mislead the user's browser into running the attacker’s script.
+
+As the malicious scripts will execute in the browser's security context for communicating with the legitimate web server,
+
+the attacker will have complete access to the document retrieved and may send the data in the page back to his/her site.
+
+Attackers can embed harmful JavaScript into a web application in many ways. However, the latest browsers are implemented with strong security measures; hence, the script injection sometimes fails. 
+
+Therefore, attackers often try to not only take advantage of application design flaws but also bypass input evaluation processes conducted by the server or application to trick complicated browser filters
+
+A majority portion of the browser code is written with proper security measures to handle abnormal HTML, JavaScript, and CSS to fix them before delivery to the end users. 
+
+XSS filter bypassing leverages such an intricate composition of specifications, exceptions, languages, and other browser characteristics to inject scripts through the filters without leaving a trace
+
+
+
+
+
+
+
+
