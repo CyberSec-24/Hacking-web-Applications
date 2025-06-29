@@ -1,0 +1,96 @@
+Server Side JS Injection:- 
+Server-side JavaScript injections are vulnerabilities that manifest when an application integrates user-controllable values into a string that the code interpreter dynamically validates. 
+
+Attackers exploit improper validation of user data and pass random values to alter the code that will be compiled and executed by the server. 
+
+These vulnerabilities also allow attackers to compromise the functionality and data of the applications hosted by the server. 
+
+Attackers can also use the server as a source to launch further attackers in the target network.
+
+res.end(require(‘fs’).readFileSync(filename)) This vulnerability can be exploited further by initiating and running malicious binary files using the modules fs and child_process
+
+
+Server-Side Includes:- 
+Injection Server-side Includes is an application feature that helps designers to auto-generate the content of the web page without manual involvement. 
+
+The # directives allow developers to perform this activity. 
+
+These directives can be files, CGI variables, shell commands, etc. After evaluating all the directives, HTML is delivered to the requester
+
+Attackers launch server-side injection attacks to take control over web applications integrated with SSI directives. 
+
+Such an application accepts remote user inputs and uses them on the page.
+
+Attackers exploit this feature and pass malicious SSI directives as input values to perform malicious activities such as modifying and erasing server files, running shell commands, and taking control over critical files such as “/etc/passwd”
+
+Typical directives include: <!_ #include virtual= “/footer.html” --> <!_ #echo var= “DATE_LOCAL” -->
+
+
+Server-Side Template Injection:-
+Server-side template injection occurs when users are allowed to insert unsafe inputs into a server-side template.
+
+When this vulnerability exists, attackers can inject malicious template directives to run arbitrary code and gain complete control over the target web server. 
+
+This injection is similar to XSS but is often employed to target server internals and achieve remote code execution, making every vulnerable application a primary target. 
+
+If attackers are able to attach template files with such expressions, they can run any arbitrary function to gain access to the target web server
+
+
+
+Log Injection
+Attackers launch log injection attacks by exploiting unsanitized or unvalidated inputs to application logs. 
+
+Applications usually store a large number of logs such as access logs, transaction logs, monitor logs, exception or error logs, GC logs, and crash logs. 
+
+If an application or its administrator fails to log users’ events or actions in a secure manner, attackers could insert fake entries or records to corrupt the log file
+
+The unvalidated input parameters come directly from the request
+Cookie: PHPSESSID=pltmp1obqfig09bs9gfeersju3; username: xyz; id=Walkin Attackers can manipulate the id parameter to save the log with fake inputs:
+Cookie: PHPSESSID=pltmp1obqfig09bs9gfeersju3; username: xyz; id=\r\n (Fake input)
+
+
+HTML Injection:-
+It is different from JavaScript and VB script injection attacks. 
+
+HTML is a core language employed to design a website, and it is often targeted by attackers to change its functionality and original look.
+
+If an attacker can successfully inject HTML code, legitimate users may be diverted from their intended activity.
+
+For instance, when the HTML code is injected, it allows the attacker to create a malicious form that appears to be genuine to the end users.
+
+It requests users to re-enter their credentials. Once the form is submitted with their credentials, it exfiltrates the information to the attacker
+
+
+ CRLF Injection
+In a carriage return line feed (CRLF) injection attack, attackers inject carriage return (\r) and line feed (\n) characters into the user’s input to trick the web server, 
+
+web application, or user into believing that the current object is terminated and a new object has been initiated. 
+
+CRLF injection is a vulnerability that manifests when a user enters the CRLF characters into an application.
+
+HTTP request smuggling can occur when an HTTP request is transmitted via a server, which serves as a proxy to validate and forward the request to the next server. 
+
+Such vulnerabilities can also lead to further attacks such as cache poisoning, firewall security breach, and request hijacking.
+
+Here, %0d and %0a are CR and LF encoded characters. After injecting CRLF characters, the log entries appear as follows: 
+10.10.10.10 - 09:25 - /index.php?page=about& 127.0.0.1 - 09:25 - /index.php?page=home&restrictedaction=edit
+
+
+ JNDI Injection:- 
+The Java Naming and Directory Interface (JNDI) is a Java-based API that takes a single parameter as input and searches for the requested object based on the specified name
+
+It searches for objects in directory services such as Common Object Request Broker Architecture (CORBA), LDAP, DNS, or Remote Method Invocation (RMI). 
+
+If the parameter resides in malicious services managed by attackers, then the application fetches a malicious class object from the server,
+
+Attackers exploit this vulnerability in the target Java application by resolving the “classFactory” and “classFactoryLocation” attribute requests made using “InitialContext().lookup(name)” with a malicious class. 
+
+If the requested object name is responded to with a malicious object class having the same name that is stored in the attackers’ servers, 
+
+the Java application fetches that code and executes it, which leads to remote code execution. 
+
+If the “classFactory” object name is not found in the server, then the Java application fetches the code by resolving “classFactoryLocation,” which is a URL.
+
+
+
+
