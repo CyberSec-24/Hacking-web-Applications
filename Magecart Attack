@@ -1,0 +1,11 @@
+A Magecart attack, also referred to as web skimming, involves an attacker inserting malicious code into a target website to collect sensitive customer data, such as credit card details, usernames, addresses, and other personal information, during an online transaction. 
+
+These stolen details are further used for credit card fraud, identity theft, or can be sold on the dark web to make fraudulent purchases.
+
+Steps Include:-
+▪ Step 1 Attacker identifies an e-commerce website with outdated software or third-party plugins to gain illegitimate access.
+▪ Step 2: After gaining access, the attacker embeds malicious JS into the website. 
+▪ Step 3: The injected script is activated during the users’ checkout process, exfiltrating their card details to the attacker's server or controlled domain.
+▪ Step 4: The attacker obtains users’ card details and uses them for malicious purposes. 
+
+
