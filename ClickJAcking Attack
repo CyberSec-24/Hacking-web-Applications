@@ -1,0 +1,21 @@
+A clickjacking attack is performed when the target website is loaded into an iframe element that is masked with a web page element that appears legitimate. 
+
+The attacker performs this attack by tricking the victim into clicking on any malicious web page element that is placed transparently on the top of any trusted web page.
+
+They perform such attacks by exploiting the vulnerabilities caused by HTML iframes or improper configuration of the X-Frame-Options header. 
+
+There are several variations of clickjacking attacks such as likejacking and cursorjacking. 
+
+To perform these attacks, attackers send a link to the malicious website to the victim through email, social media, or any other media.
+
+In clickjacking, the attacker loads the target website inside a low opacity iframe.
+
+Then, the attacker designs a page such that all the clickable items such as buttons are positioned exactly as on the selected target website.
+
+Now, the victim is tricked into clicking on the invisible controls or the deceptive UI elements that automatically trigger various malicious actions such as injecting malware,
+retrieving malicious web pages, retrieving sensitive information such as credit card details, transferring money from the victim’s account, and buying products online.
+
+Hidden overlay: In this technique, the attacker creates an iframe of 1×1 pixels containing malicious content placed secretly under the mouse cursor. 
+When the user clicks on this cursor, it will be registered on the malicious page although the malicious content is concealed by the cursor
+
+
