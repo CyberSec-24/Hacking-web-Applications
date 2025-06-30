@@ -1,0 +1,17 @@
+Cross-site request forgery (CSRF), also known as a one-click attack, occurs when a hacker instructs a user’s web browser to send a request to the vulnerable website through a malicious web page. 
+
+Finance-related websites commonly contain CSRF vulnerabilities. Usually, outside attackers cannot access corporate intranets; hence, CSRF is one of the methods used to enter these networks. 
+
+The inability of web applications to differentiate a request made using malicious code from a genuine request exposes it to a CSRF attack.
+
+Such attacks exploit web page vulnerabilities that allow attackers to force unsuspecting users' browsers to send malicious requests that they did not intend to send. 
+
+The victim user holds an active session with a trusted site and simultaneously visits a malicious site, which injects an HTTP request for the trusted site into the victim user’s session, compromising its integrity.
+
+In this scenario, the attacker constructs a malicious script and stores it on a malicious web server.
+
+When a user visits the website, the malicious script starts running and the attacker gains access to the user’s browser
+
+In a CSRF attack, the attacker waits for the user to connect with a trusted server and then tricks the user into clicking on a malicious link containing arbitrary code. 
+
+When the user clicks on the link, it executes the arbitrary code on the trusted server. The diagram below explains the steps involved in a CSRF attack
