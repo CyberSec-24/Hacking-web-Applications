@@ -1,0 +1,13 @@
+MarioNet is a browser-based attack that runs malicious code inside the browser, and the infection persists even after closing or browsing away from the malicious web page through which the infection has spread. 
+Most of the latest web browsers support a new API called Service Workers that allows the website to isolate operations that render the web page UI from intensive computational tasks to avoid freezing of the UI when large amounts of data are processed
+
+Attackers register and activate the Service Workers API through a website controlled by them. 
+
+When the victim browses that website, the Service Workers API automatically activates, and it can run persistently in the background even when the user is not actively browsing the website
+
+Therefore, MarioNet can resist any tab crashes and power failures, increasing the attacker’s potential to attack the browser. 
+
+MarioNet leverages the abilities of JavaScript and depends on previously available HTML5 APIs. 
+
+It can be used to create a botnet and launch other malicious attacks such as cryptojacking, DDoS, click fraud, and distributed password cracking
+
