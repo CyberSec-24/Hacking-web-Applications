@@ -1,0 +1,11 @@
+XML poisoning is similar to an SQL injection attack. It has a higher success rate in a web service framework. 
+
+Attackers insert malicious XML code in SOAP requests to perform XML node manipulation or XML schema poisoning to generate errors in XML parsing logic and break execution logic. 
+
+Attackers can manipulate XML external entity references that can lead to arbitrary file or TCP connection openings, which can be exploited for other web service attacks.
+
+XML poisoning enables attackers to perform a DoS attack and compromise confidential information.
+
+As web services are invoked using XML documents, attackers poison the traffic between the server and browser applications by creating malicious XML documents to alter parsing mechanisms such as SAX and DOM, which web applications use on the server
+
+
