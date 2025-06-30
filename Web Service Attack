@@ -1,0 +1,15 @@
+Similar to the way in which a user interacts with a web application through a browser,a web service can interact directly with the web application without the need for an interactive user session or a browser.
+
+The evolution and increasing use of web services in businesses offer new attack vectors in an application framework. 
+
+Web services are based on XML protocols such as Web Services Definition Language (WSDL) for describing the connection points, Universal Description, Discovery, 
+
+Integration (UDDI) for the description and discovery of web services, and Simple Object Access Protocol (SOAP) for communication between web services, which are vulnerable to various web application threats.
+
+Thus, web services provide the attacker with much of the information required to fingerprint the environment to formulate an attack. 
+Some examples of this type of attack are as follows:
+1. An attacker injects a malicious script into a web service and can disclose and modify application data.
+2. An attacker uses a web service for ordering products and injects a script to reset the quantity and status on the confirmation page to less than what he or she had originally ordered. 
+Thus, the system processing the order request submits the order, ships the order, and then modifies the order to show that the company is shipping a smaller number of products, but the attacker ends up receiving more of the product than he or she pays for
+
+
