@@ -1,0 +1,34 @@
+Cookies are generally used to maintain a session between web applications and users; thus, cookies need to transmit sensitive credentials frequently. 
+
+The attacker can modify the cookies' information with ease to escalate access or assume the identity of another user.
+
+Poisoning cookies and session information can allow an attacker to inject malicious content or modify the user's online experience and obtain unauthorized information
+
+ They exist as files stored in the client computer's memory or hard disk.
+
+A proxy can be used for rewriting the session data, displaying the cookie data, and/or specifying a new user ID or other session identifiers in the cookie.
+
+By modifying the data in a cookie, an attacker can often gain escalated access or maliciously affect the user's session. 
+
+Many sites offer the ability to “Remember me?” and store the user's information in a cookie so the user does not have to re-enter the data with every visit to the site. 
+
+Any private information entered is stored in a cookie. To protect cookies, site developers often encode them. 
+
+Easily reversible encoding methods such as Base64 and ROT13 (rotating the letters of the alphabet through 13 characters) give a false sense of security to the users who view cookies.
+
+ By assuming another user's online identity, attackers can review the original user's purchase history, order new items, exploit services, and access the vulnerable web application
+
+Another method of cookie/session poisoning uses a proxy to rewrite the session data, displaying the cookie data and/or specifying a new user ID or other session identifiers in the cookie. 
+
+There are four types of cookies: persistent, non-persistent, secure, and non-secure. Persistent cookies are stored on a disk, whereas non-persistent ones are stored in memory. 
+
+Web applications transfer secure cookies only through SSL connections
+
+Cookie poisoning alters the value of a cookie at the client side before the request is sent to the server. 
+
+A web server can send a set cookie with the help of any response over the provided string and command. 
+
+The cookies are stored on the users’ computers and are a standard way of recognizing users. Once the web server is set, it receives all the requests from the cookies. 
+
+To provide further functionality to the application, cookies support modification and analysis by JavaScript.
+
