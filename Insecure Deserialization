@@ -1,0 +1,19 @@
+As data in the computer is stored in the form of data structures (graph, trees, array, etc.), data serialization and deserialization is an effective process for linearizing and de-linearizing data objects to transport them to other networks or systems.
+
+Consider an example of an object “Employee” (for JAVA platform), where the Employee object consists of data such as name, age, city, and EmpID. 
+
+Due to the process of serialization, the object data will be converted into the following linear format for transportation to different systems or different nodes of a network
+<Employee><Name>Rinni</Name><Age>26</Age><City>Nevada</City><EmpID>2201 </EmpID></Employee>
+
+Deserialization is the reverse process of serialization, whereby the object data is recreated from the linear serialized data.
+
+Due to the process of deserialization, the serialized Employee object 
+
+This process of serialization and deserialization is effectively used in communication between networks, and its widespread usage attracts attackers to exploit the flaws in this process.
+
+Attackers inject malicious code into serialized linear formatted data and forward the malicious serialized data to the victim.
+
+Due to insecure deserialization, the injected malicious code will be undetected and remain present in the final execution of the deserialization code
+
+This could have a severe impact on the system, as it would authorize the attacker to execute and run systems remotely. Moreover, any software or server vulnerable to deserialization attacks could be adversely affected
+
