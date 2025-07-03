@@ -1,0 +1,9 @@
+SOAP is a lightweight and simple XML-based protocol designed to exchange structured and type information on the web. 
+
+The XML envelope element is always the root element of a SOAP message in the XML schema. 
+
+SOAP injection includes special characters such as single quotes, double quotes, semicolons, and so on.
+
+The attacker injects malicious query strings in the user input field to bypass web service authentication mechanisms and access backend databases. 
+
+This attack works similarly to SQL injection attacks
