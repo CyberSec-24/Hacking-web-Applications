@@ -1,0 +1,25 @@
+WS-Address provides additional routing information in the SOAP header to support asynchronous communication. 
+
+This technique allows the transmission of web service requests and response messages using different TCP connections. 
+
+It is essential for long-running service requests where the calculation time of the server-side application exceeds the lifetime of a single TCP connection
+
+ As the requester selects the endpoint address used in the ReplyTo and FaultTo headers, it is not secured properly against tampering by intermediaries. 
+
+Although the specification asks to perform digital signatures on these header fields, the values mostly depend on the default setting without any proper security.
+
+This causes a vulnerability that can be exploited by the attacker to perform the WS-Address spoofing attack.
+
+In the WS-address spoofing attack, an attacker sends a SOAP message containing fake WS-Address information to the server. 
+
+The <ReplyTo> header consists of the address of the endpoint selected by the attacker instead of the web service client. 
+
+The endpoint selected by the attacker receives unnecessary traffic via SOAP messages
+
+The attacker may generate a massive amount of traffic, thus resulting in a DoS attack. 
+
+Attackers use tools such as WS-Attacker to identify and exploit WS-addressing spoofing vulnerabilities.
+
+
+
+
