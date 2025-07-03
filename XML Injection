@@ -1,0 +1,12 @@
+Web applications sometimes use XML to store data such as user credentials in XML documents; attackers can parse and view such data using XPATH. 
+
+XPATH defines the flow of the document and verifies user credentials, such as the username and password, to redirect them to a specific user account
+
+Attackers identify the XPATH and insert an XML injection or XML schema to bypass the authentication process and gain unrestricted access to the data stored in XML. 
+
+The process by which attackers enter values that query XML takes advantage of is an XML injection attack. 
+
+Attackers inject XML data and tags into user input fields to manipulate XML schema or populate XML databases with bogus entries. 
+
+
+
