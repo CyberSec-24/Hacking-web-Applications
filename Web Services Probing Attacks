@@ -1,0 +1,11 @@
+WSDL files are automated documents consisting of sensitive information about service ports, connections formed between two electronic machines, and so on. 
+
+Attackers can use WSDL probing attacks to obtain information about the vulnerabilities in public and private web services, as well as to perform an SQL attack
+
+A web service probing attack involves the following steps:
+
+▪ In the first step, trap the WSDL document from web service traffic and analyze it to determine the purpose of the application, functional breakdown, entry points, and message types
+
+▪ Create a set of valid requests by selecting a set of operations and formulating the request messages according to the rules of the XML schema that can be submitted to the web service
+
+▪ Use these requests to include malicious contents in SOAP requests and analyze errors to gain a deeper understanding of potential security weaknesses
