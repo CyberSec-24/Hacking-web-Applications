@@ -1,0 +1,14 @@
+HTTP: APIs such as SOAP and REST mostly use the HTTP protocol for communicating API-based messages. 
+
+The HTTP protocol is a text-based protocol where the header information is transmitted in a readable format. 
+
+For example, consider the following HTTP Request and Response headers
+
+
+ Message Formats: The API messages transmitted over the web will take some format such as JSON for REST API and XML for SOAP API. 
+
+If these formats are used incorrectly, they can pave the way for vulnerabilities.
+
+As these formats are easy to understand, an attacker can easily manipulate messages encoded in these formats to identify the target and its perimeter.
+
+
