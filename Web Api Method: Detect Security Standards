@@ -1,0 +1,20 @@
+APIs such as SOAP and REST implement different authentication/authorization standards such as OpenID Connect, SAML, OAuth 1.X and 2.X, and WS-Security
+
+SSL provides transport-level security for API messages to ensure confidentiality through encryption and integrity through signature
+
+In most of the APIs, SSL is used to encrypt only sensitive user data such as credit card details, thereby leaving other information in plaintext
+
+If these security standards are configured improperly, an attacker can identify vulnerabilities in these standards for further exploitation
+
+ SSL provides transport-level security for API messages to ensure confidentiality through encryption and integrity through signature. 
+
+Although SSL is used for security, in most API messages, only sensitive user data such as credit card details are encrypted, leaving other information in plaintext.
+
+
+Kiterunner is an advanced tool designed for API scanning and contextual content discovery,
+
+specifically tailored for modern web applications that heavily rely on APIs. 
+
+It outshines conventional tools by not just brute-forcing directories but also by discovering and understanding complex API endpoint structures through context-aware scanning.
+
+The tool assists attackers in scanning the API endpoints; it can scan single targets, multiple targets, and lists of all targets at once
