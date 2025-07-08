@@ -1,0 +1,18 @@
+After identifying the target API to attack and its security implementations, an attacker needs to identify the attack surface for launching the attack. 
+
+It is very easy to find an attack surface for UI-based applications, as we can see various input fields on the web pages. 
+
+However, identifying the attack surface for an API is different as there are no built-in UI fields; we can only see an API endpoint. 
+
+API metadata reveals a large amount of technical information such as paths, parameters, and message formats, which is useful for performing an attack. 
+
+REST API uses metadata formats such as Swagger, RAML, API-Blueprint, and I/O Docs, while SOAP API uses WSDL/XML-Schema, etc
+
+If an API does not have metadata, attackers monitor and record the communication between the API and an existing client to identify the initial attack surface. 
+
+For example, an attacker may use a mobile app that uses target the API, configure a local proxy for recording traffic, and finally configure the mobile device to use this proxy to access the API
+
+Postman allows attackers to capture API traffic, including requests, responses, and cookies, using a built-in proxy. 
+
+Postman interceptor can catch requests and responses, and Postman’s proxy runs inside the Postman application and can be used with HTTP or HTTPS websites
+
