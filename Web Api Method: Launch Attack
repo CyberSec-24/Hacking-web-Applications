@@ -1,0 +1,136 @@
+Fuzzing 
+Attackers use the fuzzing technique to repeatedly send some random input to the target API to generate error messages that reveal critical information. 
+
+To perform fuzzing, attackers use automated scripts that send numerous requests with varying combinations of input parameters. 
+
+Attackers use tools such as Fuzzapi to perform fuzzing on the target API.
+
+
+Invalid Input Attacks
+In some scenarios, fuzzing is difficult to perform due to its structure. 
+
+In such cases, attackers will give invalid inputs to the API, such as sending text in place of numbers, sending numbers in place of text, sending a greater number of characters than expected, and sending null characters, etc., to extract sensitive information from unexpected system behavior and error messages. 
+
+At the same time, attackers also manipulate the HTTP headers and values targeting both API logic and the HTTP protocol.
+
+
+Injection Attacks
+Similar to traditional web applications, APIs are also vulnerable to various injection attacks. 
+For example, consider the following normal URL: http://billpay.com/api/v1/cust/459
+
+For the abovementioned URL, the API retrieves the customer details based on the customer ID 459 from the database using the following SQL query: “SELECT * FROM Customers where custID=’” + custID + ”’”
+
+Here, the custID is replaced with 459 “SELECT * FROM Customers where custID=’459’”
+In the abovementioned URL, assume that an attacker in
+
+Exploiting Insecure Configurations
+
+o Insecure SSL Configuration: Vulnerabilities in SSL configuration may allow attackers to perform MITM attacks. 
+For example, using self-signed SSL certificates for secure API access may allow attackers to perform an MITM attack.
+An attacker may sniff the traffic between an API and a client, manipulate the client-side certificate, and start monitoring or manipulating the encrypted traffic between the client and the API.
+
+o Insecure Direct Object References (IDOR): In general, direct object references are used as arguments for API calls, and access rights are not imposed on the objects for which a user does not have access. 
+These vulnerabilities can be identified through API metadata and exploited by attackers to identify the parameters and try all possible values for the parameters to access the data to which the user does not have access.
+
+o Insecure Session/Authentication Handling: Vulnerabilities such as the reuse of session tokens, sequential session tokens, long session token timeout, unencrypted session token, and session token embedded into a URL, allow attackers to hijack and take over the client session and steal or manipulate the messages between the client and the API.
+
+
+
+API DDoS Attacks
+The DDoS attack involves saturating an API with a massive volume of traffic from multiple infected computers (botnet) to delay the API services to legitimate users. 
+
+Although many rate limit constraints are implemented to protect the server against crashing, they may not prevent the service delay (API response), thereby degrading the API’s user experience.
+
+Attackers often carry out these attacks using botnets that are created to discover and stay within the API rate limit control to increase the possibility of an attack. 
+
+Along with the regular traffic from legitimate users, attackers’ requests can also bypass API security management systems, load balancers, and other security implementations
+
+
+Authorization Attacks on API: 
+ OAuth is an authorization protocol that allows a user to grant limited access to his/her resources on one site to another site without having to expose his/her credentials.
+
+OAuth grants authorization flows for many computing devices and applications, such as connecting users to different applications from one application to access the required information.
+
+
+Different actors involved in the OAuth process: 
+o Owner of the resource: The resource owner is also known as a user who grants permission to an application to access his/her account. 
+The access to the application is limited or conditional, such as providing only read and write permissions.
+
+o Authorization/Resource Server (API): 
+The resource server provides the secured user account, and the authorization server validates the user identity and then supplies the access token to the application.
+
+o Client or Application: 
+It is an application that seeks access to the user account.
+To access the account, the user must authorize the application; then, the API should validate the authorization
+
+
+OAuth Attacks:-
+Attack on ‘Connect’ Request
+Most sites enable users to access other websites such as LinkedIn, Instagram, and Twitter, via OAuth. 
+
+An attacker can exploit requests to connect one site to another, i.e., when the user hits the “Login with or Connect” button. 
+
+Then, he or she can gain illegal access to the client-side user/victim’s account by connecting his/her account to the provider’s website.
+
+The attacker initiates the “Connect” operation with the client through his/her fake account on the provider’s website but halts authorization server redirects, 
+which means that the attacker validates the client to access his/her resources on the provider, while the client is not informed
+
+✓ Uses CSRF to make the user logout on the provider. 
+✓ Again uses CSRF to make the user login on the provider using his/her fake account credentials.
+✓ Spoofs the first request to connect the provider account with the client. It is just another GET request. 
+It is usually performed inside the <iframe> tag to make the user unaware of this action.
+
+ Attack on ‘redirect_uri’
+While registering, the domain is usually specified by the client and only those “redirect_uri” on the specific domain are permitted. 
+
+If an attacker can identify vulnerabilities such as XSS on a web page on the client domain, he/she can exploit them to capture authorization code
+
+
+ CSRF on Authorization Response
+The attacker performs a CSRF attack to connect a fake account on the provider with the victim’s account on the client side.
+
+This attack exploits a third request related to authorization code grant
+
+ The attacker starts a “Connect” operation with the client through his/her fake account on the provider, but halts authorization server redirects, 
+which means that the attacker has validated the client to access his/her resources on the provider, while the client is not informed. 
+
+Hence, the attacker stores the authorization_code.
+
+• The attacker persuades the user to send a request to https://xyz.com/<provider>/login?code=Auth_Code.
+
+This operation can be implemented by luring the victim into opening a malicious link embedded with an img or script tag along with the abovementioned link as source
+
+
+Access Token Reusage:- 
+OAuth requires unique access tokens for individual clients. 
+
+It ensures that these tokens saved on the authorization server are mapped to relevant scopes and time expiry. Access tokens provided for “ClientA” can work for “ClientB”
+
+
+ SSRF Using Dynamic Client Registration Endpoint:- 
+In black-box testing on an OAuth server, the analysis may not detect hidden URLs such as the Dynamic Client Registration endpoint. 
+
+These URLs are used as special registration endpoints and are mapped to /register. 
+
+The attacker can perform an SSRF attack using these URLs associated with the parameters, as demonstrated in the following POST request
+
+ logo_uri: After registering a new user, the server authorizes an endpoint with the new client_id and displays the logo using the logo_uri parameter.
+If the server fetches the logo, an SSRF attack might occur.
+
+• jwks_uri: The JWT key is important for the server to validate an endpoint token client authentication.
+If the client application is registered with a malicious URL in the jwks_uri parameter, an SSRF attack may occur; 
+thus, the attacker can obtain the authorization code for all the users.
+
+• request_uris: This parameter contains an array of URLs that are used while authorizing an endpoint. The URL contains the requested information with a JWT.
+It is possible to perform an SSRF attack by using the request_uri parameter
+
+
+WebFinger is a standard protocol used to display all user information through a GET request. 
+In OAuth authorization, “/.well-known/webfinger” validates an endpoint with a username that does not exist in the server.
+
+The attacker can use “anonymous” as a username to validate themselves as a genuine user account on the server. 
+
+As the account is not found or used by the OpenID client application, we can determine that the request does not originate from the browser side
+
+
+
